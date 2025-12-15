@@ -1,4 +1,4 @@
-Example project to demostrate restarting of services inside Docker container using entr/inotify.
+Example project to demostrate restarting of services inside Docker container using [watchexec](https://github.com/watchexec/watchexec).
 
 
 ```bash
