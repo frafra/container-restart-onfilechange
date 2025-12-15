@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo "$FILE" | exec entr -nr timeout -k 5 0 sh -c "exec $@"
+exec watchexec -rw "$FILE" --fs-events modify --stop-timeout 5 -- exec "$@"
